@@ -44,9 +44,35 @@
         </div>
         <!-- end preloader -->
         <!-- Start header -->
-        <header id="header" class="wpo-site-header">
-            <nav class="navigation navbar navbar-expand-lg navbar-light">
+        <header id="header">
+            <div class="topbar">
                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-md-7 col-sm-12 col-12">
+                            <div class="contact-intro">
+                                <ul>
+                                    <li><i class="fi ti-location-pin"></i>7 Green Lake Street Crawfordsville</li>
+                                    <li><i class="fi flaticon-email"></i> consultar@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-md-5 col-sm-12 col-12">
+                            <div class="contact-info">
+                                <ul>
+                                    <li>Visit our social pages</li>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end topbar -->
+            <div class="wpo-site-header">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-3 col-6">
                             <div class="navbar-header">
@@ -63,27 +89,50 @@
                             <div id="navbar" class="collapse navbar-collapse navigation-holder">
                                 <button class="close-navbar"><i class="ti-close"></i></button>
                                 <ul class="nav navbar-nav mb-2 mb-lg-0">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a class="active" href="#">Home</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="index.html">Home style 1</a></li>
+                                            <li><a href="index-2.html">Home style 2</a></li>
+                                            <li><a class="active" href="index-3.html">Home style 3</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="about.html">About</a></li>
-                                    <li><a href="#">Siding</a>
+                                    <li><a href="#">Services</a>
                                         <ul class="sub-menu">
-                                            <li><a href="james_hardie_siding.html">James Hardie Siding</a></li>
-                                            <li><a href="stucco_removal.html">Stucco removal </a></li>
-                                            <li><a href="everlast_siding.html">Everlast siding</a></li>
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="service-s2.html">Service style 2</a></li>
+                                            <li><a href="service-single.html">Service Single</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Roofing</a>
+                                    <li><a href="#">Projects</a>
                                         <ul class="sub-menu">
-                                            <li><a href="metal_roofing.html">Metal roofing</a></li>
-                                            <li><a href="traditional_shingles_roofing.html">Traditional shingles
-                                                    roofing</a></li>
-                                            <li><a href="synthetic_slate_roofing.html">Synthetic slate roofing</a></li>
+                                            <li><a href="project.html">Project</a></li>
+                                            <li><a href="project-s2.html">Project Style 2</a></li>
+                                            <li><a href="project-single.html">Project Single</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Windows</a>
+                                    <li><a href="#">Pages</a>
                                         <ul class="sub-menu">
-                                            <li><a href="fiberglass_windows.html">Fiberglass windows</a></li>
-                                            <li><a href="patio_doors.html">Patio doors</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="testimonial.html">Testimonial</a></li>
+                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li><a href="404.html">Error 404</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="http://google.com">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog right sidebar</a></li>
+                                            <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                                            <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
+                                            <li class="menu-item-has-children">
+                                                <a href="#">Blog details</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog-single.html">Blog details right sidebar</a></li>
+                                                    <li><a href="blog-single-left-sidebar.html">Blog details left sidebar</a></li>
+                                                    <li><a href="blog-single-fullwidth.html">Blog details fullwidth</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -91,28 +140,48 @@
                                 <div id="dl-menu" class="dl-menuwrapper">
                                     <button class="dl-trigger">Open Menu</button>
                                     <ul class="dl-menu">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="#">Siding</a>
+                                        <li>
+                                            <a href="#">Home</a>
                                             <ul class="dl-submenu">
-                                                <li><a href="james_hardie_siding.html">James Hardie Siding</a></li>
-                                                <li><a href="stucco_removal.html">Stucco removal </a></li>
-                                                <li><a href="everlast_siding.html">Everlast siding</a></li>
+                                                <li><a href="index.html">Home style 1</a></li>
+                                                <li><a href="index-2.html">Home style 2</a></li>
+                                                <li><a  href="index-3.html">Home style 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#">Services</a>
+                                            <ul class="dl-submenu">
+                                                <li><a href="service.html">Service</a></li>
+                                                <li><a href="service-single.html">Service Single</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Projects</a>
                                             <ul class="dl-submenu">
-                                                <li><a href="metal_roofing.html">Metal roofing</a></li>
-                                                <li><a href="traditional_shingles_roofing.html">Traditional shingles
-                                                        roofing</a></li>
-                                                <li><a href="synthetic_slate_roofing.html">Synthetic slate roofing</a>
-                                                </li>
+                                                <li><a href="project.html">Project</a></li>
+                                                <li><a href="project-single.html">Project Single</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Pages</a>
                                             <ul class="dl-submenu">
-                                                <li><a href="fiberglass_windows.html">Fiberglass windows</a></li>
-                                                <li><a href="patio_doors.html">Patio doors</a></li>
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="404.html">Error 404</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="http://google.com">Blog</a>
+                                            <ul class="dl-submenu">
+                                                <li><a href="blog.html">Blog right sidebar</a></li>
+                                                <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                                                <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
+                                                <li>
+                                                    <a href="#">Blog details</a>
+                                                    <ul class="dl-submenu">
+                                                        <li><a href="blog-single.html">Blog details right sidebar</a></li>
+                                                        <li><a href="blog-single-left-sidebar.html">Blog details left sidebar</a></li>
+                                                        <li><a href="blog-single-fullwidth.html">Blog details fullwidth</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -120,10 +189,17 @@
                                 </div><!-- /dl-menuwrapper -->
                             </div><!-- end of nav-collapse -->
                         </div>
-
+                        <div class="col-lg-3 col-md-4 col-4">
+                            <div class="header-right">
+                                <div class="close-form">
+                                    <a class="theme-btn" href="contact.html">Free Consulting</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div><!-- end of container -->
-            </nav>
+                </nav>
+            </div>
         </header>
         <!-- end of header -->
         <!-- start of wpo-hero-section-1 -->
@@ -139,8 +215,10 @@
                                 <p>Facilitating client learning—that is, teaching clients how to resolve similar
                                     problems in the future.</p>
                             </div>
-                            <div class="btns">
-                                <a href="about.html" class="btn theme-btn">Get Started</a>
+                            <div class="btns ">
+                                <a href="about.html" class="btn theme-btn me-3">Get Started</a>
+                                <a href="about.html" class="btn theme-btn " style="background: #079885;
+                            ">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -151,21 +229,6 @@
                     <div class="r-img">
                         <img src="assets/images/index_1.jpg" alt="">
 
-                    </div>
-                    <div class="wpo-happy-client">
-                        <div class="wpo-happy-client-text">
-                            <p class="like_h3">252+</p>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="wpo-happy-client-img">
-                            <ul class="wpo-happy-client-slide owl-carousel">
-                                <li><img src="assets/images/slider/client1.png" alt=""></li>
-                                <li><img src="assets/images/slider/client2.png" alt=""></li>
-                                <li><img src="assets/images/slider/client3.png" alt=""></li>
-                                <li><img src="assets/images/slider/client4.png" alt=""></li>
-                                <li><img src="assets/images/slider/client3.png" alt=""></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
 
@@ -182,8 +245,6 @@
                         <div class="wpo-about-wrap">
                             <div class="wpo-about-img">
                                 <img src="assets/images/index_2.jpg" alt="">
-                                <div class="wpo-ab-shape-1"><img src="assets/images/ab-shape-1.png" alt=""></div>
-                                <div class="wpo-ab-shape-2"><img src="assets/images/ab-shape-2.png" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -205,57 +266,164 @@
             </div>
         </section>
         <!-- end of wpo-about-section -->
-        <!-- start of wpo-features-section -->
-        <section class="wpo-features-section section-padding">
+
+             <!-- start of wpo-blog-section -->
+             <section class="wpo-blog-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="wpo-section-title">
+                                <span>blog</span>
+                                <h2>Our blog Packages</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpo-blog-items">
+                        <div class="row">
+                            <div class="col col-lg-4 col-md-6 col-12">
+                                <div class="wpo-blog-item">
+                                    <div class="wpo-blog-img">
+                                        <img src="assets/images/index_6.jpg" alt="">
+                                    </div>
+                                    <div class="wpo-blog-content">
+                                        <div class="wpo-blog-content-top">
+                                      
+                                            <h3><a href="blog.html">Good Advice: Tips From Successful Small Business
+                                                    Owners</a></h3>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4 col-md-6 col-12">
+                                <div class="wpo-blog-item">
+                                    <div class="wpo-blog-img">
+                                        <img src="assets/images/index_6.jpg" alt="">
+                                    </div>
+                                    <div class="wpo-blog-content">
+                                        <div class="wpo-blog-content-top">
+                                      
+                                            <h3><a href="blog.html">Good Advice: Tips From Successful Small Business
+                                                    Owners</a></h3>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4 col-md-6 col-12">
+                                <div class="wpo-blog-item">
+                                    <div class="wpo-blog-img">
+                                        <img src="assets/images/index_6.jpg" alt="">
+                                    </div>
+                                    <div class="wpo-blog-content">
+                                        <div class="wpo-blog-content-top">
+                                      
+                                            <h3><a href="blog.html">Good Advice: Tips From Successful Small Business
+                                                    Owners</a></h3>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of wpo-blog-section -->
+      
+        <section class="wpo-service-section section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="wpo-features-item">
-                            <div class="wpo-features-icon">
-                                <div class="icon">
-                                    <img src="assets/images/icon/document.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="wpo-features-text">
-                                <h3><a href="service-single.html">Strategy and Planning</a></h3>
-                                <p>One way to categorize the activities is in terms of the professional’s area of
-                                    expertise such as competitive analysis, corporate strategy.</p>
-                            </div>
+                    <div class="col-12">
+                        <div class="wpo-section-title">
+                            <span>Our Services</span>
+                            <h2>Explore Our Services</h2>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="wpo-features-item">
-                            <div class="wpo-features-icon">
-                                <div class="icon">
-                                    <img src="assets/images/icon/bar-graph.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="wpo-features-text">
-                                <h3><a href="service-single.html">Market Analysis</a></h3>
-                                <p>One way to categorize the activities is in terms of the professional’s area of
-                                    expertise such as competitive analysis, corporate strategy.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="wpo-features-item">
-                            <div class="wpo-features-icon">
+                        <div class="wpo-service-item">
+                            <div class="wpo-service-icon">
                                 <div class="icon">
                                     <img src="assets/images/icon/clipboard.svg" alt="">
                                 </div>
                             </div>
-                            <div class="wpo-features-text">
-                                <h3><a href="service-single.html">Investment Strategy</a></h3>
-                                <p>One way to categorize the activities is in terms of the professional’s area of
-                                    expertise such as competitive analysis, corporate strategy.</p>
+                            <div class="wpo-service-text">
+                                <h2><a href="service-single.html">Strategy and Planning</a></h2>
+                                <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wpo-service-item">
+                            <div class="wpo-service-icon">
+                                <div class="icon">
+                                    <img src="assets/images/icon/briefcase.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="wpo-service-text">
+                                <h2><a href="service-single.html">Corporate Finance</a></h2>
+                                <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wpo-service-item">
+                            <div class="wpo-service-icon">
+                                <div class="icon">
+                                    <img src="assets/images/icon/chart.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="wpo-service-text">
+                                <h2><a href="service-single.html">Market Research</a></h2>
+                                <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wpo-service-item">
+                            <div class="wpo-service-icon">
+                                <div class="icon">
+                                    <img src="assets/images/icon/badge.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="wpo-service-text">
+                                <h2><a href="service-single.html">Business Analysis</a></h2>
+                                <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wpo-service-item">
+                            <div class="wpo-service-icon">
+                                <div class="icon">
+                                    <img src="assets/images/icon/goal.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="wpo-service-text">
+                                <h2><a href="service-single.html">Consumer Markets</a></h2>
+                                <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wpo-service-item">
+                            <div class="wpo-service-icon">
+                                <div class="icon">
+                                    <img src="assets/images/icon/handshake.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="wpo-service-text">
+                                <h2><a href="service-single.html">Insurance</a></h2>
+                                <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end of wpo-features-section -->
-
         <!-- start wpo-fun-fact-section -->
         <section class="wpo-fun-fact-section wpo-fun-fact-section-s2">
             <div class="container">
@@ -292,127 +460,10 @@
             </div> <!-- end container -->
         </section>
         <!-- end wpo-fun-fact-section -->
-        <!-- start of wpo-blog-section -->
-        <section class="wpo-blog-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="wpo-section-title">
-                            <span>blog</span>
-                            <h2>Our blog Packages</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="wpo-blog-items">
-                    <div class="row">
-                        <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="wpo-blog-item">
-                                <div class="wpo-blog-img">
-                                    <img src="assets/images/index_9.jpg" alt="">
-                                </div>
-                                <div class="wpo-blog-content">
-                                    <div class="wpo-blog-content-top">
-                                        <div class="wpo-blog-thumb">
-                                            <span>Business</span>
-                                        </div>
-                                        <h3><a href="blog.html">8 Mistakes First-Time Founders Make When Starting a
-                                                Business.</a></h3>
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="wpo-blog-item">
-                                <div class="wpo-blog-img">
-                                    <img src="assets/images/index_4.jpg" alt="">
-                                </div>
-                                <div class="wpo-blog-content">
-                                    <div class="wpo-blog-content-top">
-                                        <div class="wpo-blog-thumb">
-                                            <span>Consulitng</span>
-                                        </div>
-                                        <h3><a href="blog.html">3 of the Worst Ways Small Businesses Waste Money on
-                                                Marketing</a></h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="wpo-blog-item">
-                                <div class="wpo-blog-img">
-                                    <img src="assets/images/index_5.jpg" alt="">
-                                </div>
-                                <div class="wpo-blog-content">
-                                    <div class="wpo-blog-content-top">
-                                        <div class="wpo-blog-thumb">
-                                            <span>Business</span>
-                                        </div>
-                                        <h3><a href="blog.html">Good Advice: Tips From Successful Small Business
-                                                Owners</a></h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="wpo-blog-item">
-                                <div class="wpo-blog-img">
-                                    <img src="assets/images/index_6.jpg" alt="">
-                                </div>
-                                <div class="wpo-blog-content">
-                                    <div class="wpo-blog-content-top">
-                                        <div class="wpo-blog-thumb">
-                                            <span>Business</span>
-                                        </div>
-                                        <h3><a href="blog.html">Good Advice: Tips From Successful Small Business
-                                                Owners</a></h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="wpo-blog-item">
-                                <div class="wpo-blog-img">
-                                    <img src="assets/images/index_7.jpg" alt="">
-                                </div>
-                                <div class="wpo-blog-content">
-                                    <div class="wpo-blog-content-top">
-                                        <div class="wpo-blog-thumb">
-                                            <span>Business</span>
-                                        </div>
-                                        <h3><a href="blog.html">Good Advice: Tips From Successful Small Business
-                                                Owners</a></h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="wpo-blog-item">
-                                <div class="wpo-blog-img">
-                                    <img src="assets/images/index_8.jpg" alt="">
-                                </div>
-                                <div class="wpo-blog-content">
-                                    <div class="wpo-blog-content-top">
-                                        <div class="wpo-blog-thumb">
-                                            <span>Business</span>
-                                        </div>
-                                        <h3><a href="blog.html">Good Advice: Tips From Successful Small Business
-                                                Owners</a></h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of wpo-blog-section -->
+        
+   
         <!--Start wpo-support-section-->
         <section class="wpo-support-section">
             <div class="container">
@@ -429,6 +480,79 @@
             </div>
         </section>
         <!--End wpo-support-section-->
+
+ <!--Start wpo-gallery-section-->  
+ <section class="wpo-gallery-section section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-8">
+                <div class="wpo-section-title">
+                    <span>Projects</span>
+                    <h2>Our Project Gallery</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-4">
+                <div class="wpo-section-title-button">
+                    <a href="project.html">More Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-xs-12 sortable-gallery">
+                <div class="wpo-gallery-container">
+                    <div class="grid">
+                        <div class="wpo-gallery-item">
+                            <a href="project-single.html">
+                                <img src="assets/images/gallery/img-6.jpg" alt class="img img-responsive">
+                                <div class="wpo-gallery-text">
+                                    <h3>Digital Analysis</h3>
+                                    <i class="ti-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="wpo-gallery-item">
+                            <a href="project-single.html">
+                                <img src="assets/images/gallery/img-7.jpg" alt class="img img-responsive">
+                                <div class="wpo-gallery-text">
+                                    <h3>Corporate Finance</h3>
+                                    <i class="ti-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="wpo-gallery-item">
+                            <a href="project-single.html">
+                                <img src="assets/images/gallery/img-8.jpg" alt class="img img-responsive">
+                                <div class="wpo-gallery-text">
+                                    <h3>Market Research</h3>
+                                    <i class="ti-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="wpo-gallery-item">
+                            <a href="project-single.html">
+                                <img src="assets/images/gallery/img-9.jpg" alt class="img img-responsive">
+                                <div class="wpo-gallery-text">
+                                    <h3>Business Analysis</h3>
+                                    <i class="ti-plus"></i>
+                                </div>
+                            </a>
+                        </div>                         
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div>
+</section>
+<!--End wpo-gallery-section-->
+
         <!--Start wpo-testimonial-section-->
         <section class="wpo-testimonial-section section-padding">
             <div class="container">
@@ -483,6 +607,97 @@
             </div>
         </section>
         <!--End wpo-testimonial-section-->
+
+          <!-- start wpo-contact-pg-section -->
+          <section class="wpo-contact-pg-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-10 offset-lg-1">
+                        <div class="office-info">
+                            <div class="row">
+                                <div class="col col-xl-4 col-lg-6 col-md-6 col-12 offset-md-2 ">
+                                    <div class="office-info-item">
+                                        <div class="office-info-icon">
+                                            <div class="icon">
+                                                <img src="assets/images/icon/home.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="office-info-text">
+                                            <h2>Address</h2>
+                                            <p>7 Green Lake Street Crawfordsville, IN 47933</p>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="office-info-item">
+                                        <div class="office-info-icon">
+                                            <div class="icon">
+                                                <img src="assets/images/icon/app.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="office-info-text">
+                                            <h2>Call Now</h2>
+                                            <p>+1 800 123 456 789</p>
+                                            <p>+1 800 123 654 987</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="wpo-contact-title">
+                            <h3>Have Any Question?</h3>
+                            <p>It is a long established fact that a reader will be distracted
+                                content of a page when looking.</p>
+                        </div>
+                        <div class="wpo-contact-form-area">
+                            <form method="post" class="contact-validation-active" id="contact-form-main">
+                                <div>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*">
+                                </div>
+                                <div>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email*">
+                                </div>
+                                <div>
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone*">
+                                </div>
+                                <div>
+                                    <select name="subject" class="form-control">
+                                        <option disabled="disabled" selected>Subject</option>
+                                        <option>Subject 1</option>
+                                        <option>Subject 2</option>
+                                        <option>Subject 3</option>
+                                    </select>
+                                </div>
+                                <div class="fullwidth">
+                                    <textarea class="form-control" name="note"  id="note" placeholder="Message..."></textarea>
+                                </div>
+                                <div class="submit-area">
+                                    <button type="submit" class="theme-btn">Get in Touch</button>
+                                    <div id="loader">
+                                        <i class="ti-reload"></i>
+                                    </div>
+                                </div>
+                                <div class="clearfix error-handling-messages">
+                                    <div id="success">Thank you</div>
+                                    <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>                
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end wpo-contact-pg-section -->
+
+        <!--  start wpo-contact-map -->
+        <section class="wpo-contact-map-section">
+            <h2 class="hidden">Contact map</h2>
+            <div class="wpo-contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- end wpo-contact-map -->
 
         <!-- start of wpo-site-footer-section -->
         <footer class="wpo-site-footer">

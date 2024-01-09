@@ -1,0 +1,127 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     Consultar - Business Consulting Services HTML5 Template
+Version:        1.0.0
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1	Theme Reset Style
+#0.2	Global Elements
+#0.3	header
+#0.4	wpo-hero-slider
+#0.5	wpo-features-section
+#0.6	wpo-about-sections
+#0.7	wpo-service-section
+#0.8	wpo-pricing-section
+#0.9	wpo-fun-fact-section
+#1.0	wpo-gallery-section
+#1.1	wpo-testimonial-section
+#1.2	wpo-support-section
+#1.3	wpo-blog-section
+#1.4	wpo-footer
+#1.5	cta-section-s2
+
+
+--------------------------------------------------------------
+#Home-style-2
+--------------------------------------------------------------
+#2.1	wpo-service-section-s2
+
+
+--------------------------------------------------------------
+#Home-style-3
+--------------------------------------------------------------
+#3.1	wpo-features-section-s2
+#3.2	wpo-service-section-s3
+
+
+--------------------------------------------------------------
+#4.0 wpo-service-single-section
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+#5.0 wpo-project-section
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+#6.0 wpo-project-single-section
+--------------------------------------------------------------
+
+
+--------------------------------------------------------------
+	#blog page
+--------------------------------------------------------------
+#7.1	wpo-blog-pg-section
+
+
+--------------------------------------------------------------
+	#blog single page
+--------------------------------------------------------------
+#8.1 wpo-blog-single-section
+
+
+--------------------------------------------------------------
+	#contact page
+--------------------------------------------------------------
+#9.1 wpo-contact-pg-section
+
+--------------------------------------------------------------
+	404 page
+--------------------------------------------------------------
+#10.1 error-404-section
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+
+@import "page/_home-style2";
+
+@import "page/_home-style3";
+
+
+@import "page/_service";
+
+@import "page/_project";
+
+@import "page/_blog";
+
+@import "page/_blog-single";
+
+@import "page/_contact";
+
+@import "page/_error-404";
+
+
+

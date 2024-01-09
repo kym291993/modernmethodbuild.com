@@ -199,7 +199,7 @@ a:hover {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 70px 0;
 }
 
 @media (max-width: 767px) {
@@ -2343,7 +2343,7 @@ a:hover {
   position: absolute;
   right: 0;
   top: 0;
-  height: 900px;
+  height: 780px;
   width: 50%;
   z-index: -11;
   background: url(../images/slider/slide-1.jpg) no-repeat right center;
@@ -3224,6 +3224,7 @@ hero slider s2
 /* 3.3	wpo-about-sections */
 .wpo-about-section {
   padding: 60px 0 155px;
+  background: #f4f8fc;
 }
 
 .wpo-about-section .wpo-about-wrap .wpo-about-img {
@@ -3686,7 +3687,7 @@ hero slider s2
 
 /* 3.8	wpo-testimonial-section */
 .wpo-testimonial-section {
-  padding-top: 90px;
+  padding-top: 180px;
 }
 
 .wpo-testimonial-section.style-2 {
@@ -3714,7 +3715,7 @@ hero slider s2
   max-width: 500px;
   font-size: 50px;
   position: relative;
-  padding-left: 112px;
+  padding-left: 130px;
   font-family: "Futura PT Demi";
 }
 
@@ -4125,7 +4126,7 @@ hero slider s2
 }
 
 .wpo-fun-fact-section.wpo-fun-fact-section-s2 .wpo-fun-fact-grids {
-  padding: 90px 70px;
+  padding: 70px 70px;
   border-radius: 20px;
   box-shadow: 0px 2px 20px 0px rgba(62, 65, 159, 0.09);
 }
