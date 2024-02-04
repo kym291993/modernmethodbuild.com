@@ -4785,7 +4785,7 @@ hero slider s2
     font-size: 25px;
   }
 }
-.wpo-project-single-section .wpo-project-single-wrap .wpo-solutions-section h3 {
+.wpo-project-single-section .wpo-project-single-wrap .wpo-solutions-section h3:not(.accordion-header) {
   font-size: 26px;
   font-family: "Futura PT Demi";
   margin-bottom: 15px;
@@ -6526,7 +6526,7 @@ hero slider s2
 }
 
 .areas_list ul li:last-child a {
-  padding-bottom: 0;
+  padding-bottom: 0; 
   border-bottom: 0;
 }
 

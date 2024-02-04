@@ -3838,15 +3838,15 @@ hero slider s2
   border-bottom: 1px solid #e1e1e1;
 }
 .wpo-service-single-section .wpo-service-single-wrap .wpo-benefits-section .accordion-item .accordion-body {
-  padding-left: 0;
-  padding-right: 0;
+  /* padding-left: 0;
+  padding-right: 0; */
 }
 .wpo-service-single-section .wpo-service-single-wrap .wpo-benefits-section .accordion-item button {
   padding: 20px;
   border: 0;
   border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
+  /* padding-left: 0;
+  padding-right: 0; */
   font-size: 20px;
   color: #232f4b;
   text-align: left;
