@@ -6493,6 +6493,49 @@ hero slider s2
   color: white;
 }
 
+.areas_list ul li
+{
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.areas_list ul li a {
+  display: block;
+  font-size: 16px;
+  color: #232f4b;
+  font-weight: 600;
+  padding-left: 30px;
+  position: relative;
+  
+}
+
+
+
+
+.areas_list ul li a:before {
+  position: absolute;
+  left: 0;
+  font-family: "themify";
+  content: "";
+  font-size: 14px;
+  color: #3757f7;
+}
+
+.areas_list ul li a:hover {
+  color: #3757f7;
+}
+
+.areas_list ul li:last-child a {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+
+
+.areas_list ul li:first-child a:before {
+  top: 2px;
+}
+
 
 
 
