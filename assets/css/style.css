@@ -6586,6 +6586,46 @@ hero slider s2
   background: url(../images/Single-title-shape2.png) no-repeat right center;
 }
 
+.workflow-section .item
+{
+  width: 100%;
+  border-radius: 20px; 
+  overflow: hidden;
+  /* border: #232f4b solid thin; */
+  
+}
+
+.workflow-section .item .top
+{
+height: 200px;
+width: 100%;
+display: flex;
+justify-content: center;
+
+
+}
+
+.workflow-section .item .top img
+{
+  height: 100%;
+}
+
+.workflow-section .item .down 
+{
+width: 100%;
+height: 320px;
+padding: 30px;
+}
+
+.workflow-section .item .down h3 span 
+{
+  font-size: 50px;
+ font-weight: 800;
+ padding-right: 12px;
+}
+
+
+
 
 
 
