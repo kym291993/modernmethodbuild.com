@@ -384,7 +384,7 @@ a:hover {
   font-family: "Futura PT";
 }
 
-.wpo-section-title h2 {
+.wpo-section-title h2,.wpo-section-title .h2 {
   font-size: 50px;
   line-height: 1em;
   margin: 0;
@@ -394,14 +394,15 @@ a:hover {
   font-family: "Futura PT Demi";
 }
 
+
 @media (max-width: 767px) {
-  .wpo-section-title h2 {
+  .wpo-section-title h2,.wpo-section-title .h2 {
     font-size: 32px;
   }
 }
 
 @media (max-width: 330px) {
-  .wpo-section-title h2 {
+  .wpo-section-title h2,.wpo-section-title .h2 {
     font-size: 30px;
   }
 }
@@ -6535,6 +6536,61 @@ hero slider s2
 .areas_list ul li:first-child a:before {
   top: 2px;
 }
+
+.exterior-col 
+{
+  
+  border-radius: 20px;
+  background: #3757f7;
+  color: white;
+}
+
+.exterior-col .wpo-section-title>*, .exterior-col p
+{
+  color: white;
+} 
+
+
+
+
+.custom-home-section .list {
+  list-style: none;
+}
+
+.custom-home-section .list li {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.custom-home-section .list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.custom-home-section .list li:first-child {
+  padding-top: 0;
+}
+
+.marker 
+{
+  width: 52px;
+    height: 20px;
+   
+    background: url(../images/Single-title-shape.png) no-repeat right center;
+}
+
+.exterior-col .marker 
+{
+  background: url(../images/Single-title-shape2.png) no-repeat right center;
+}
+
+
+
+
+
+
 
 
 

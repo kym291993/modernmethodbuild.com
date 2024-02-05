@@ -378,7 +378,7 @@ a:hover {
   color: #3757f7;
   font-family: "Futura PT";
 }
-.wpo-section-title h2 {
+.wpo-section-title h2,.wpo-section-title .h2 {
   font-size: 50px;
   line-height: 1em;
   margin: 0;
@@ -388,12 +388,12 @@ a:hover {
   font-family: "Futura PT Demi";
 }
 @media (max-width: 767px) {
-  .wpo-section-title h2 {
+  .wpo-section-title h2,.wpo-section-title .h2 {
     font-size: 32px;
   }
 }
 @media (max-width: 330px) {
-  .wpo-section-title h2 {
+  .wpo-section-title h2,.wpo-section-title .h2 {
     font-size: 30px;
   }
 }
