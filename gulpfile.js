@@ -83,10 +83,10 @@ gulp.task("min:css", function() {
          .pipe(sourcemaps.init())
         .pipe(sass())
         // .pipe(combineMedia())
-        .pipe(autoprefixer({
-            cascade: false
-        }))
-        .pipe(cleanCSS({ level: 2 }))
+        // .pipe(autoprefixer({
+        //     cascade: false
+        // }))
+        // .pipe(cleanCSS({ level: 2 }))
         .pipe(sourcemaps.write("./"))
         .pipe(gulp.dest("./out/assets/css/"))
         .pipe(browserSync.reload({stream: true}));
