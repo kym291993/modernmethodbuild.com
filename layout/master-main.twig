@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <title> Consultar - Business Consulting Services HTML5 Template</title>
+    <link href="assets/css/css.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="angular-shape">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+        <!-- end preloader -->
+      
+
+{% include "../component/header.twig" %}
+     {% block main %}
+        {% endblock %}
+{% include "../component/contact-blog.twig" %}
+       {% include "../component/footer.twig" %}
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+   
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
