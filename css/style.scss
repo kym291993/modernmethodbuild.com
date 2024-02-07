@@ -3273,13 +3273,13 @@ hero slider s2
   height: 30px;
 }
 
-.wpo-about-section .wpo-about-text h1 {
+.wpo-about-section .wpo-about-text h1,.wpo-about-section .wpo-about-text .h1 {
   font-size: 50px;
   font-family: "Futura PT Demi";
   margin: 30px 0;
 }
 
-.wpo-about-section .wpo-about-text h1 span {
+.wpo-about-section .wpo-about-text h1 span,.wpo-about-section .wpo-about-text .h1 span {
   color: #3757f7;
 }
 
@@ -6426,7 +6426,22 @@ hero slider s2
 
 .mmb-microservice-section
 {
+  .interior
+  {
+    position: relative;
+  &::before 
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: calc(70%);
+    border-left: #676767 solid thin;
 
+    top:50%;
+    transform:translate(0, -50%);
+  }
+  }
 }
 
 .mmb-microservice-section .mmb-microservice-item 
@@ -6436,16 +6451,20 @@ hero slider s2
 
 .mmb-microservice-section .mmb-microservice-item .item 
 {
-  height: 200px;
-  padding-bottom: 20px;
+  height: 140px;
+ 
+
+
 
   
 
 }
 
+
+
+
 .mmb-microservice-section .mmb-microservice-item  .item >a
 {
-  border: #3757f7 solid thin;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -6477,8 +6496,9 @@ hero slider s2
   position: absolute;
   left: 0;
   top: 0;
-  background: #04081a96;
+  background: rgb(41 44 57 / 59%);
   content: "";
+  transition: 0.1s;
 }
 
 .mmb-microservice-section .mmb-microservice-item  .item >a:hover::before
@@ -6492,6 +6512,7 @@ hero slider s2
 .mmb-microservice-section .mmb-microservice-item  .item >a h4
 {
   color: white;
+  text-align: center;
 }
 
 .areas_list ul li
