@@ -3273,13 +3273,13 @@ hero slider s2
   height: 30px;
 }
 
-.wpo-about-section .wpo-about-text h1 {
+.wpo-about-section .wpo-about-text h1,.wpo-about-section .wpo-about-text .h1 {
   font-size: 50px;
   font-family: "Futura PT Demi";
   margin: 30px 0;
 }
 
-.wpo-about-section .wpo-about-text h1 span {
+.wpo-about-section .wpo-about-text h1 span,.wpo-about-section .wpo-about-text .h1 span {
   color: #3757f7;
 }
 
@@ -4699,7 +4699,7 @@ hero slider s2
 }
 
 .wpo-project-single-section .wpo-project-single-wrap .wpo-project-single-content .wpo-project-single-content-des .wpo-project-single-content-des-wrap .wpo-project-single-content-des-left {
-  flex-basis: 100%;
+  flex-basis: 65%;
   padding-right: 40px;
 }
 
@@ -6426,7 +6426,22 @@ hero slider s2
 
 .mmb-microservice-section
 {
+  .interior
+  {
+    position: relative;
+  &::before 
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: calc(70%);
+    border-left: 1px solid #e1e1e1;
 
+    top:50%;
+    transform:translate(0, -50%);
+  }
+  }
 }
 
 .mmb-microservice-section .mmb-microservice-item 
@@ -6436,16 +6451,20 @@ hero slider s2
 
 .mmb-microservice-section .mmb-microservice-item .item 
 {
-  height: 200px;
-  padding-bottom: 20px;
+  height: 140px;
+ 
+
+
 
   
 
 }
 
+
+
+
 .mmb-microservice-section .mmb-microservice-item  .item >a
 {
-  border: #3757f7 solid thin;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -6477,8 +6496,9 @@ hero slider s2
   position: absolute;
   left: 0;
   top: 0;
-  background: #04081a96;
+  background: rgb(51 54 67 / 59%);
   content: "";
+  transition: 0.1s;
 }
 
 .mmb-microservice-section .mmb-microservice-item  .item >a:hover::before
@@ -6492,6 +6512,7 @@ hero slider s2
 .mmb-microservice-section .mmb-microservice-item  .item >a h4
 {
   color: white;
+  text-align: center;
 }
 
 .areas_list ul li
@@ -6585,6 +6606,47 @@ hero slider s2
 {
   background: url(../images/Single-title-shape2.png) no-repeat right center;
 }
+
+.workflow-section .item
+{
+  width: 100%;
+  border-radius: 20px; 
+  overflow: hidden;
+  /* border: #232f4b solid thin; */
+  margin-bottom: 30px;
+  
+}
+
+.workflow-section .item .top
+{
+height: 200px;
+width: 100%;
+display: flex;
+justify-content: center;
+
+
+}
+
+.workflow-section .item .top img
+{
+  height: 100%;
+}
+
+.workflow-section .item .down 
+{
+width: 100%;
+height: 320px;
+padding: 30px;
+}
+
+.workflow-section .item .down h3 span 
+{
+  font-size: 50px;
+ font-weight: 800;
+ padding-right: 12px;
+}
+
+
 
 
 
