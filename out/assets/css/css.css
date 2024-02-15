@@ -23552,6 +23552,10 @@ hero slider s2
   padding-right: 12px;
 }
 
+.wpo-blog-content-top h3 {
+  text-align: center;
+}
+
 
 @media (max-width: 1700px) {
   .wpo-site-header {
