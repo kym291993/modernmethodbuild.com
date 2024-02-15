@@ -6651,6 +6651,13 @@ padding: 30px;
     text-align: center;
   }
 }
+.navbar-brand {
+  padding-left: 40px;
+  img {
+    height: 80px;
+    object-fit: contain;
+  }
+}
 
 
 
