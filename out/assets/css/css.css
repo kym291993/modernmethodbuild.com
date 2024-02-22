@@ -19500,9 +19500,9 @@ a:hover {
 }
 
 .wpo-hero-section-1 .wpo-hero-title .like_h2 {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 900;
-  line-height: 90px;
+  line-height: 85px;
   margin: 10px 0 25px;
   color: #232f4b;
   font-family: "Futura PT";
@@ -23764,6 +23764,14 @@ hero slider s2
   }
 }
 @media (max-width: 767px) {
+  .wpo-hero-section-1 .wpo-hero-title .like_h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    margin: 10px 0 25px;
+    color: #232f4b;
+    font-family: "Futura PT";
+  }
   .header-right .theme-btn {
     padding: 20px 12px;
   }
@@ -23862,7 +23870,8 @@ hero slider s2
     top: -20%;
   }
   .wpo-hero-section-1.wpo-hero-section-2 {
-    height: 720px;
+    height: 400px;
+    padding-top: 50px;
   }
   .wpo-gallery-section .wpo-section-title-button {
     text-align: center;
