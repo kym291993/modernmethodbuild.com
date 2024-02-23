@@ -1,0 +1,168 @@
+.component__megamodal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 99999999999;
+    flex-direction: column;
+    display: none;
+    box-sizing: border-box;
+    overflow: auto;
+
+    &.active {
+        display: flex;
+    }
+
+    >.top {
+        height: 6vh;
+        width: 100%;
+        display: flex;
+
+        align-items: center;
+        background: #283a5e;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .cross-btn {
+                font-size: 20px;
+                background: none;
+                border: none;
+                padding: 10px;
+                color: white;
+            }
+
+        }
+
+
+    }
+
+    >.down {
+        height: auto;
+        width: 100%;
+        padding: 30px 0;
+        display: none;
+
+        &.active 
+        {
+            display: block;
+        }
+
+        >.item-area {
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >.question {
+                font-size: 35px;
+                font-family: "Futura PT Demi";
+                color: #fff;
+                color: #232f4b;
+                padding: 40px 0;
+                text-align: center;
+                max-width: 70%;
+            }
+
+            .row {
+                width: 100%;
+                .item {
+                    display: flex;
+                    justify-content: center;
+                    
+                    &.active
+                    {
+                        .wrap 
+                        {
+                            border: #283a5e solid 5px;
+                            border-radius: 25px;
+                            overflow: hidden;
+
+                            &:hover::before
+                            {
+                                width: 0;
+                            }
+                        }
+                    }
+
+                    .wrap {
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        position: relative;
+                        padding-bottom: 20px;
+
+                        .title {
+                            font-size: 25px;
+                            font-weight: 500;
+                            color: #232f4b;
+                            font-family: "Futura PT";
+                            margin: 20px 0;
+                            text-align: center;
+                        }
+
+                        .text {
+                            font-size: 16px;
+                            color: #4f555a;
+                            line-height: 1.8em;
+                            text-align: center;
+                            width: 75%;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+
+                        &:before {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 0;
+                            height: 5px;
+                            content: "";
+                            background: #283a5e;
+                            transition: all 0.3s;
+                        }
+
+                        &:hover::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.button-area {
+            width: 100%;
+            padding: 60px 0;
+            justify-content: center;
+            display: flex;
+
+            .theme-btn {
+                padding-left: 40px;
+                padding-right: 40px;
+                &:disabled {
+                    background: #ccc !important;
+
+                    &::after {
+                        background: #ccc !important;
+                    }
+                }
+
+                &:disabled:hover {
+                    background: #ccc !important;
+                }
+
+                &:disabled:hover::after {
+                    background: #ccc !important;
+                }
+            }
+        }
+    }
+}

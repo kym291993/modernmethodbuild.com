@@ -1,5 +1,10 @@
 
-  
+body:has(.component__megamodal.active)
+{
+  overflow: hidden;
+}
+
+
   @import "themify-icons";
   @import "flaticon";
   @import "bootstrap.min";
@@ -15,4 +20,5 @@
   @import "component";
   @import "style";
   @import "responsive";
+  @import "megamodal";
 

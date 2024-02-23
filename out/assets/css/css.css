@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+body:has(.component__megamodal.active) {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "themify";
   src: url("../fonts/themify.eot?-fvbane");
@@ -23881,5 +23885,139 @@ hero slider s2
   .wpo-gallery-section {
     padding: 100px 0 60px;
   }
+}
+.component__megamodal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 99999999999;
+  flex-direction: column;
+  display: none;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.component__megamodal.active {
+  display: flex;
+}
+.component__megamodal > .top {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #283a5e;
+}
+.component__megamodal > .top .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.component__megamodal > .top .container .cross-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+.component__megamodal > .down {
+  height: auto;
+  width: 100%;
+  padding: 30px 0;
+  display: none;
+}
+.component__megamodal > .down.active {
+  display: block;
+}
+.component__megamodal > .down > .item-area {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.component__megamodal > .down > .item-area > .question {
+  font-size: 35px;
+  font-family: "Futura PT Demi";
+  color: #fff;
+  color: #232f4b;
+  padding: 40px 0;
+  text-align: center;
+  max-width: 70%;
+}
+.component__megamodal > .down > .item-area .row {
+  width: 100%;
+}
+.component__megamodal > .down > .item-area .row .item {
+  display: flex;
+  justify-content: center;
+}
+.component__megamodal > .down > .item-area .row .item.active .wrap {
+  border: #283a5e solid 5px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.component__megamodal > .down > .item-area .row .item.active .wrap:hover::before {
+  width: 0;
+}
+.component__megamodal > .down > .item-area .row .item .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+.component__megamodal > .down > .item-area .row .item .wrap .title {
+  font-size: 25px;
+  font-weight: 500;
+  color: #232f4b;
+  font-family: "Futura PT";
+  margin: 20px 0;
+  text-align: center;
+}
+.component__megamodal > .down > .item-area .row .item .wrap .text {
+  font-size: 16px;
+  color: #4f555a;
+  line-height: 1.8em;
+  text-align: center;
+  width: 75%;
+}
+.component__megamodal > .down > .item-area .row .item .wrap img {
+  width: 100%;
+}
+.component__megamodal > .down > .item-area .row .item .wrap:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  content: "";
+  background: #283a5e;
+  transition: all 0.3s;
+}
+.component__megamodal > .down > .item-area .row .item .wrap:hover::before {
+  width: 100%;
+}
+.component__megamodal > .down > .button-area {
+  width: 100%;
+  padding: 60px 0;
+  justify-content: center;
+  display: flex;
+}
+.component__megamodal > .down > .button-area .theme-btn {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.component__megamodal > .down > .button-area .theme-btn:disabled {
+  background: #ccc !important;
+}
+.component__megamodal > .down > .button-area .theme-btn:disabled::after {
+  background: #ccc !important;
+}
+.component__megamodal > .down > .button-area .theme-btn:disabled:hover {
+  background: #ccc !important;
+}
+.component__megamodal > .down > .button-area .theme-btn:disabled:hover::after {
+  background: #ccc !important;
 }
 /*# sourceMappingURL=css.css.map */
