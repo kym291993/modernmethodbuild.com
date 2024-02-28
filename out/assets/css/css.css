@@ -19129,6 +19129,7 @@ a:hover {
 .wpo-site-header .header-right .close-form .theme-btn-s4,
 .wpo-site-header .header-right .close-form .view-cart-btn {
   padding: 10px 25px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -23923,7 +23924,7 @@ hero slider s2
   justify-content: flex-end;
 }
 .component__megamodal > .top .container .cross-btn {
-  font-size: 20px;
+  font-size: 18px;
   background: none;
   border: none;
   padding: 10px;
@@ -23954,6 +23955,10 @@ hero slider s2
   text-align: center;
   max-width: 70%;
 }
+.component__megamodal > .down > .item-area input, .component__megamodal > .down > .item-area select {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 .component__megamodal > .down > .item-area .row {
   width: 100%;
 }
@@ -23967,7 +23972,7 @@ hero slider s2
   overflow: hidden;
 }
 .component__megamodal > .down > .item-area .row .item.active .wrap:hover::before {
-  width: 0;
+  content: none;
 }
 .component__megamodal > .down > .item-area .row .item .wrap {
   display: flex;
@@ -24007,6 +24012,36 @@ hero slider s2
 .component__megamodal > .down > .item-area .row .item .wrap:hover::before {
   width: 100%;
 }
+.component__megamodal > .down > .item-area .row .option {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.component__megamodal > .down > .item-area .row .option.active {
+  font-weight: 900;
+}
+.component__megamodal > .down > .item-area .row .option.active span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #3757f7;
+  border-radius: 100%;
+}
+.component__megamodal > .down > .item-area .row .option span {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 30px;
+  border: #3757f7 solid medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .component__megamodal > .down > .button-area {
   width: 100%;
   padding: 60px 0;
@@ -24016,6 +24051,7 @@ hero slider s2
 .component__megamodal > .down > .button-area .theme-btn {
   padding-left: 40px;
   padding-right: 40px;
+  font-size: 18px;
 }
 .component__megamodal > .down > .button-area .theme-btn:disabled {
   background: #ccc !important;

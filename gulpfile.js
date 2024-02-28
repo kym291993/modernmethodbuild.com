@@ -49,7 +49,7 @@ var concatjsdes = [
     "./js/jquery.dlmenu.js",
     "./js/jquery-plugin-collection.js",
     "./js/script.js",
-    // "./js/home.js"
+    "./js/megamodal.js"
 ];
 
 var htmllink = [
