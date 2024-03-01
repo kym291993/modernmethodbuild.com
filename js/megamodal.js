@@ -166,12 +166,64 @@ class Megamodal {
     }
 
      //step5
+     #your_name
+     #your_email
+     #your_phone
      Step5Init() {
         $(".component__megamodal .q5").addClass("active");
+        this.#your_name= "";
+        this.#your_email= "";
+        this.#your_phone= "";
+        let self = this;
+
+        $(".component__megamodal .q5 .name").on("input", function() {
+            self.#your_name = $(this).val();
+            self.#map.set("Your Name", self.#your_name);
+            if(self.#your_email!=""&&self.#your_name!=""&&self.#your_phone!="")
+            {
+                $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
+                $(".component__megamodal .q5 .theme-btn").on("click",function(){
+                    self.DistructAllStep();
+                    self.Step5Init();
+                    self.Distruct();
+                });
+            }
+          });
+
+          $(".component__megamodal .q5 .phone").on("input", function() {
+            self.#your_phone = $(this).val();
+            self.#map.set("Your Phone", self.#your_phone);
+            if(self.#your_email!=""&&self.#your_name!=""&&self.#your_phone!="")
+            {
+                $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
+                $(".component__megamodal .q5 .theme-btn").on("click",function(){
+                    self.Distruct();
+                });
+            }
+          });
+
+          $(".component__megamodal .q5 .email").on("input", function() {
+            self.#your_email = $(this).val();
+            self.#map.set("Your Email", self.#your_email);
+            if(self.#your_email!=""&&self.#your_name!=""&&self.#your_phone!="")
+            {
+                $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
+                $(".component__megamodal .q5 .theme-btn").on("click",function(){
+                    self.Distruct();
+                });
+            }
+          });
     }
 
     Step5Distruct() {
         $(".component__megamodal .q5").removeClass("active");
+        $(".component__megamodal .q5 input").val('');
+        this.#your_name= "";
+        this.#your_email= "";
+        this.#your_phone= "";
+        $(".component__megamodal .q5 .theme-btn").attr("disabled", "disabled");
+        $(".component__megamodal .q5 .item").off();
+        $(".component__megamodal .q5 .theme-btn").off();
     }
 
      //step6
@@ -214,7 +266,8 @@ class Megamodal {
 
     Step6Distruct() {
         $(".component__megamodal .q6").removeClass("active");
-        $(".component__megamodal .q6 .item").removeClass("active");
+        $(".component__megamodal .q6 input").val('');
+        $(".component__megamodal .q6 select").val('');
         this.#location_in_south_west_florida = "";
         this.#your_address = "";
         $(".component__megamodal .q6 .theme-btn").attr("disabled", "disabled");
@@ -222,13 +275,33 @@ class Megamodal {
         $(".component__megamodal .q6 .theme-btn").off();
     }
 
+    #what_is_the_prefered_square_ft
       //step7
       Step7Init() {
+        this.DistructAllStep();
         $(".component__megamodal .q7").addClass("active");
+        this.#what_is_the_prefered_square_ft = "";
+        let self = this;
+        
+        $(".component__megamodal .q7 .option").on("click", function (){
+            $(".component__megamodal .q7 .option").removeClass("active");
+            self.#what_is_the_prefered_square_ft = $(this).attr("data-choose");
+            $(this).addClass("active");
+            $(".component__megamodal .q7 .theme-btn").removeAttr("disabled");
+            $(".component__megamodal .q7 .theme-btn").on("click",function(){
+                self.#map.set("What is the prefered square ft?", self.#what_is_the_prefered_square_ft);     
+                self.Step6Init();
+            });
+        });
     }
 
     Step7Distruct() {
         $(".component__megamodal .q7").removeClass("active");
+        $(".component__megamodal .q7 .option").removeClass("active");
+        this.#сhoose_your_service ="";
+        $(".component__megamodal .q7 .theme-btn").attr("disabled", "disabled");
+        $(".component__megamodal .q7 .option").off();
+        $(".component__megamodal .q7 .theme-btn").off();
     }
 
     DistructAllStep()
