@@ -185,7 +185,18 @@ class Megamodal {
                 $(".component__megamodal .q5 .theme-btn").on("click",function(){
                    
                     self.DistructAllStep();
-                    self.Step8Init();
+                    $.ajax({
+    
+                        type: "POST",
+            
+                        url: td+"mail.php", //Change
+            
+                        data: self.#map.serialize()
+            
+                    }).done(function() {
+                        self.Step8Init();
+                    });
+                    
                 });
             }
           });
@@ -198,7 +209,17 @@ class Megamodal {
                 $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q5 .theme-btn").on("click",function(){
                     self.DistructAllStep();
-                    self.Step8Init();
+                    $.ajax({
+    
+                        type: "POST",
+            
+                        url: td+"mail.php", //Change
+            
+                        data: self.#map.serialize()
+            
+                    }).done(function() {
+                        self.Step8Init();
+                    });
                 });
             }
           });

@@ -364,24 +364,7 @@
 /*------------------------------------------
         = Header search toggle
     -------------------------------------------*/
-    if($(".header-search-form-wrapper").length) {
-        var searchToggleBtn = $(".search-toggle-btn");
-        var searchToggleBtnIcon = $(".search-toggle-btn i");
-        var searchContent = $(".header-search-form");
-        var body = $("body");
-
-        searchToggleBtn.on("click", function(e) {
-            searchContent.toggleClass("header-search-content-toggle");
-            searchToggleBtnIcon.toggleClass("fi flaticon-magnifiying-glass fi ti-close");
-            e.stopPropagation();
-        });
-
-        body.on("click", function() {
-            searchContent.removeClass("header-search-content-toggle");
-        }).find(searchContent).on("click", function(e) {
-            e.stopPropagation();
-        });
-    }
+ 
 
 
     /*------------------------------------------
@@ -556,7 +539,7 @@
             submitHandler: function (form) {
                 $.ajax({
                     type: "POST",
-                    url: "mail-contact.php",
+                    url: td+"mail.php",
                     data: $(form).serialize(),
                     success: function () {
                         $( "#loader").hide();
@@ -629,6 +612,8 @@
 
     });
 
+
+   
 
 
 })(window.jQuery);
