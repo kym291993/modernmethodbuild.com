@@ -183,9 +183,9 @@ class Megamodal {
             {
                 $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q5 .theme-btn").on("click",function(){
+                   
                     self.DistructAllStep();
-                    self.Step5Init();
-                    self.Distruct();
+                    self.Step8Init();
                 });
             }
           });
@@ -197,7 +197,8 @@ class Megamodal {
             {
                 $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q5 .theme-btn").on("click",function(){
-                    self.Distruct();
+                    self.DistructAllStep();
+                    self.Step8Init();
                 });
             }
           });
@@ -209,7 +210,8 @@ class Megamodal {
             {
                 $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q5 .theme-btn").on("click",function(){
-                    self.Distruct();
+                    self.DistructAllStep();
+                    self.Step8Init();
                 });
             }
           });
@@ -303,6 +305,15 @@ class Megamodal {
         $(".component__megamodal .q7 .option").off();
         $(".component__megamodal .q7 .theme-btn").off();
     }
+    //step8
+    Step8Init() {
+        this.DistructAllStep();
+        $(".component__megamodal .q8").addClass("active");
+    }
+    Step8Distruct() {
+        $(".component__megamodal .q8").removeClass("active");
+    }
+
 
     DistructAllStep()
     {
@@ -313,6 +324,7 @@ class Megamodal {
         this.Step5Distruct();
         this.Step6Distruct();
         this.Step7Distruct();
+        this.Step8Distruct();
     }
 
 

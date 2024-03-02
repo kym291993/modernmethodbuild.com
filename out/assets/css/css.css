@@ -24012,6 +24012,35 @@ hero slider s2
 .component__megamodal > .down > .item-area .row .item .wrap:hover::before {
   width: 100%;
 }
+.component__megamodal > .down > .item-area .row .thank_you {
+  display: flex;
+  justify-content: center;
+}
+.component__megamodal > .down > .item-area .row .thank_you .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+.component__megamodal > .down > .item-area .row .thank_you .wrap .title {
+  font-size: 25px;
+  font-weight: 500;
+  color: #232f4b;
+  font-family: "Futura PT";
+  margin: 20px 0;
+  text-align: center;
+}
+.component__megamodal > .down > .item-area .row .thank_you .wrap .text {
+  font-size: 16px;
+  color: #4f555a;
+  line-height: 1.8em;
+  text-align: center;
+  width: 75%;
+}
+.component__megamodal > .down > .item-area .row .thank_you .wrap img {
+  width: 100%;
+}
 .component__megamodal > .down > .item-area .row .option {
   width: 100%;
   height: 50px;

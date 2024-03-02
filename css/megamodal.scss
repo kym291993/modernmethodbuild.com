@@ -144,6 +144,46 @@
                     }
                 }
 
+                .thank_you {
+                    display: flex;
+                    justify-content: center;
+                    
+                  
+
+                    .wrap {
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        position: relative;
+                        padding-bottom: 20px;
+
+                        .title {
+                            font-size: 25px;
+                            font-weight: 500;
+                            color: #232f4b;
+                            font-family: "Futura PT";
+                            margin: 20px 0;
+                            text-align: center;
+                        }
+
+                        .text {
+                            font-size: 16px;
+                            color: #4f555a;
+                            line-height: 1.8em;
+                            text-align: center;
+                            width: 75%;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+
+                    
+                    }
+                }
+
                 .option
                 {
                     width: 100%;
