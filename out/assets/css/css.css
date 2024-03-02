@@ -19615,6 +19615,8 @@ hero slider s2
   right: 60px;
   top: 50%;
   transform: translateY(-50%);
+  max-height: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 991px) {
