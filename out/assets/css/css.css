@@ -20692,6 +20692,22 @@ hero slider s2
 .wpo-gallery-section .wpo-gallery-container .grid .wpo-gallery-item {
   position: relative;
 }
+.wpo-gallery-section .wpo-gallery-container .grid .wpo-gallery-item > a {
+  padding-top: 123%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wpo-gallery-section .wpo-gallery-container .grid .wpo-gallery-item > a > img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  object-fit: cover;
+}
 
 .wpo-gallery-section .wpo-gallery-container .grid .wpo-gallery-item:before {
   position: absolute;
@@ -20702,6 +20718,7 @@ hero slider s2
   content: "";
   background: rgba(55, 87, 247, 0.8);
   transition: all 0.3s;
+  z-index: 1;
 }
 
 .wpo-gallery-section .wpo-gallery-container .grid .wpo-gallery-item:hover:before {
@@ -20711,6 +20728,7 @@ hero slider s2
 .wpo-gallery-section .wpo-gallery-container .grid .wpo-gallery-item:hover .wpo-gallery-text {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 @media (max-width: 991px) {
@@ -21766,6 +21784,7 @@ hero slider s2
 .wpo-project-single-section .wpo-project-single-wrap .wpo-project-single-content .wpo-project-single-content-des .wpo-project-single-content-des-wrap .wpo-project-single-content-des-right {
   max-width: 380px;
   flex-basis: 35%;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -21815,11 +21834,24 @@ hero slider s2
 .wpo-project-single-section .wpo-project-single-wrap .wpo-project-single-content .wpo-project-single-content-des .wpo-project-single-sub-img ul {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .wpo-project-single-section .wpo-project-single-wrap .wpo-project-single-content .wpo-project-single-content-des .wpo-project-single-sub-img li {
   padding-left: 0px;
   padding-right: 10px;
+  padding-top: 42.5%;
+  width: calc(50% - 5px);
+  position: relative;
+}
+.wpo-project-single-section .wpo-project-single-wrap .wpo-project-single-content .wpo-project-single-content-des .wpo-project-single-sub-img li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  top: 0;
 }
 
 .wpo-project-single-section .wpo-project-single-wrap .wpo-project-single-content .wpo-project-single-content-des .wpo-project-single-sub-img li:last-child {
