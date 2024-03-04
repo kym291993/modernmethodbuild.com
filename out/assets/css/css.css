@@ -20982,6 +20982,7 @@ hero slider s2
   text-transform: uppercase;
   border-radius: 6px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .wpo-support-section .wpo-support-wrapper .wpo-support-btn a:hover {
@@ -23567,10 +23568,16 @@ hero slider s2
   padding-left: 40px;
 }
 .navbar-brand img {
-  height: 60px;
+  height: 80px;
   object-fit: contain;
 }
 
+@media (max-width: 767px) {
+  .navbar-brand img {
+    height: 55px;
+    object-fit: contain;
+  }
+}
 
 @media (max-width: 1700px) {
   .wpo-site-header {
@@ -23967,6 +23974,7 @@ hero slider s2
 .component__megamodal > .down > .item-area .row .item {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .component__megamodal > .down > .item-area .row .item.active .wrap {
   border: #283a5e solid 5px;
