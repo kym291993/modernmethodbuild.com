@@ -97,7 +97,7 @@ class Megamodal {
                 $(".component__megamodal .q3 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q3 .theme-btn").on("click", function () {
                     self.DistructAllStep();
-                    self.Step6Init();
+                    self.Step5Init();
                 });
             }
 
@@ -112,7 +112,7 @@ class Megamodal {
                 $(".component__megamodal .q3 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q3 .theme-btn").on("click", function () {
                     self.DistructAllStep();
-                    self.Step6Init();
+                    self.Step5Init();
                 });
             }
         });
@@ -145,7 +145,7 @@ class Megamodal {
                 self.#map.set("What type of work you prefer?", self.#what_type_of_work_you_prefer);
                 var value = self.#map.get("What type of work you prefer?");
                 self.DistructAllStep();
-                self.Step6Init();
+                self.Step5Init();
 
             });
         });
@@ -164,17 +164,19 @@ class Megamodal {
     #your_name
     #your_email
     #your_phone
+    #your_address
     Step5Init() {
         $(".component__megamodal .q5").addClass("active");
         this.#your_name = "";
         this.#your_email = "";
         this.#your_phone = "";
+        this.#your_address= "";
         let self = this;
 
         $(".component__megamodal .q5 .name").on("input", function () {
             self.#your_name = $(this).val();
             self.#map.set("Your Name", self.#your_name);
-            if (self.#your_email != "" && self.#your_name != "" && self.#your_phone != "") {
+            if (self.#your_name != "" && self.#your_phone != "") {
                 $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q5 .theme-btn").on("click", function () {
 
@@ -201,13 +203,18 @@ class Megamodal {
 
 
                 });
+            }
+            else 
+            {
+                $(".component__megamodal .q5 .theme-btn").attr("disabled", "disabled");
+                $(".component__megamodal .q5 .theme-btn").off();
             }
         });
 
         $(".component__megamodal .q5 .phone").on("input", function () {
             self.#your_phone = $(this).val();
             self.#map.set("Your Phone", self.#your_phone);
-            if (self.#your_email != "" && self.#your_name != "" && self.#your_phone != "") {
+            if (self.#your_name != "" && self.#your_phone != "") {
                 $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
                 $(".component__megamodal .q5 .theme-btn").on("click", function () {
                     self.DistructAllStep();
@@ -230,36 +237,22 @@ class Megamodal {
                         self.Step8Init();
                     }
                 });
+            }
+            else 
+            {
+                $(".component__megamodal .q5 .theme-btn").attr("disabled", "disabled");
+                $(".component__megamodal .q5 .theme-btn").off();
             }
         });
 
         $(".component__megamodal .q5 .email").on("input", function () {
             self.#your_email = $(this).val();
             self.#map.set("Your Email", self.#your_email);
-            if (self.#your_email != "" && self.#your_name != "" && self.#your_phone != "") {
-                $(".component__megamodal .q5 .theme-btn").removeAttr("disabled");
-                $(".component__megamodal .q5 .theme-btn").on("click", function () {
-                    self.DistructAllStep();
-                    if (typeof td !== 'undefined') {
-                        // Преобразование Map в объект
-                        let formData = {};
-                        self.#map.forEach((value, key) => {
-                            formData[key] = value;
-                        });
+        });
 
-                        // Отправка данных через AJAX
-                        $.ajax({
-                            type: "POST",
-                            url: td + "mail.php",
-                            data: formData
-                        }).done(function () {
-                            self.Step8Init();
-                        });
-                    } else {
-                        self.Step8Init();
-                    }
-                });
-            }
+        $(".component__megamodal .q5 .address").on("input", function () {
+            self.#your_address = $(this).val();
+            self.#map.set("Your Address", self.#your_address);
         });
     }
 
@@ -269,56 +262,10 @@ class Megamodal {
         this.#your_name = "";
         this.#your_email = "";
         this.#your_phone = "";
+        this.#your_address= "";
         $(".component__megamodal .q5 .theme-btn").attr("disabled", "disabled");
         $(".component__megamodal .q5 .item").off();
         $(".component__megamodal .q5 .theme-btn").off();
-    }
-
-    //step6
-    #location_in_south_west_florida
-    #your_address
-    Step6Init() {
-        this.DistructAllStep();
-        $(".component__megamodal .q6").addClass("active");
-        this.#location_in_south_west_florida = "";
-        this.#your_address = "";
-        let self = this;
-        $(".component__megamodal .q6 .select_location").on("change", function () {
-
-            self.#location_in_south_west_florida = $(this).val();
-            self.#map.set("Location in south west Florida", self.#what_type_of_roof_do_you_have_now);
-            if (self.#location_in_south_west_florida != "" && self.#your_address != "") {
-
-                $(".component__megamodal .q6 .theme-btn").removeAttr("disabled");
-                $(".component__megamodal .q6 .theme-btn").on("click", function () {
-                    self.DistructAllStep();
-                    self.Step5Init();
-                });
-            }
-        });
-
-        $(".component__megamodal .q6 .address").on("input", function () {
-            self.#your_address = $(this).val();
-            self.#map.set("Your Address", self.#your_address);
-            if (self.#location_in_south_west_florida != "" && self.#your_address != "") {
-                $(".component__megamodal .q6 .theme-btn").removeAttr("disabled");
-                $(".component__megamodal .q6 .theme-btn").on("click", function () {
-                    self.DistructAllStep();
-                    self.Step5Init();
-                });
-            }
-        });
-    }
-
-    Step6Distruct() {
-        $(".component__megamodal .q6").removeClass("active");
-        $(".component__megamodal .q6 input").val('');
-        $(".component__megamodal .q6 select").val('');
-        this.#location_in_south_west_florida = "";
-        this.#your_address = "";
-        $(".component__megamodal .q6 .theme-btn").attr("disabled", "disabled");
-        $(".component__megamodal .q6 .item").off();
-        $(".component__megamodal .q6 .theme-btn").off();
     }
 
     #what_is_the_prefered_square_ft
@@ -336,7 +283,7 @@ class Megamodal {
             $(".component__megamodal .q7 .theme-btn").removeAttr("disabled");
             $(".component__megamodal .q7 .theme-btn").on("click", function () {
                 self.#map.set("What is the prefered square ft?", self.#what_is_the_prefered_square_ft);
-                self.Step6Init();
+                self.Step5Init();
             });
         });
     }
@@ -365,7 +312,6 @@ class Megamodal {
         this.Step3Distruct();
         this.Step4Distruct();
         this.Step5Distruct();
-        this.Step6Distruct();
         this.Step7Distruct();
         this.Step8Distruct();
     }
