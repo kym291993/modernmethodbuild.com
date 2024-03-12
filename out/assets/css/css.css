@@ -23610,6 +23610,27 @@ hero slider s2
     object-fit: contain;
   }
 }
+.wpo-project-single-content-des ul, .wpo-solutions-section ul {
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wpo-project-single-content-des ul li, .wpo-solutions-section ul li {
+  margin-bottom: 5px;
+}
+
+.wpo-service-section.about .wpo-service-item .wpo-service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wpo-service-section.about.wpo-service-section-s3 .wpo-service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 @media (max-width: 1700px) {
   .wpo-site-header {
