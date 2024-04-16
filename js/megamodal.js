@@ -62,7 +62,7 @@ class Megamodal {
                 self.#map.set("What type of home you prefer?", self.#what_type_of_home_you_prefer);
                 var value = self.#map.get("What type of home you prefer?");
                 self.DistructAllStep();
-                self.Step7Init();
+                self.Step10Init();
 
             });
         });
@@ -145,7 +145,7 @@ class Megamodal {
                 self.#map.set("What type of work you prefer?", self.#what_type_of_work_you_prefer);
                 var value = self.#map.get("What type of work you prefer?");
                 self.DistructAllStep();
-                self.Step5Init();
+                self.Step9Init();
 
             });
         });
@@ -165,12 +165,14 @@ class Megamodal {
     #your_email
     #your_phone
     #your_address
+    #call_date
     Step5Init() {
         $(".component__megamodal .q5").addClass("active");
         this.#your_name = "";
         this.#your_email = "";
         this.#your_phone = "";
         this.#your_address= "";
+        this.#call_date = "";
         let self = this;
 
         $(".component__megamodal .q5 .name").on("input", function () {
@@ -254,6 +256,11 @@ class Megamodal {
             self.#your_address = $(this).val();
             self.#map.set("Your Address", self.#your_address);
         });
+
+        $(".component__megamodal .q5 .date").on("input", function () {
+            self.#call_date = $(this).val();
+            self.#map.set("Call date", self.#call_date);
+        });
     }
 
     Step5Distruct() {
@@ -263,6 +270,7 @@ class Megamodal {
         this.#your_email = "";
         this.#your_phone = "";
         this.#your_address= "";
+        this.#call_date= "";
         $(".component__megamodal .q5 .theme-btn").attr("disabled", "disabled");
         $(".component__megamodal .q5 .item").off();
         $(".component__megamodal .q5 .theme-btn").off();
@@ -283,7 +291,7 @@ class Megamodal {
             $(".component__megamodal .q7 .theme-btn").removeAttr("disabled");
             $(".component__megamodal .q7 .theme-btn").on("click", function () {
                 self.#map.set("What is the prefered square ft?", self.#what_is_the_prefered_square_ft);
-                self.Step5Init();
+                self.Step1Init();
             });
         });
     }
@@ -305,6 +313,63 @@ class Megamodal {
         $(".component__megamodal .q8").removeClass("active");
     }
 
+    #Choose_the_budgeting_options
+   //step9 
+    Step9Init() {
+        this.DistructAllStep();
+        $(".component__megamodal .q9").addClass("active");
+        this.#Choose_the_budgeting_options = "";
+        let self = this;
+
+        $(".component__megamodal .q9 .option").on("click", function () {
+            $(".component__megamodal .q9 .option").removeClass("active");
+            self.#Choose_the_budgeting_options = $(this).attr("data-choose");
+            $(this).addClass("active");
+            $(".component__megamodal .q9 .theme-btn").removeAttr("disabled");
+            $(".component__megamodal .q9 .theme-btn").on("click", function () {
+                self.#map.set("Choose the budgeting options", self.#Choose_the_budgeting_options);
+                self.Step5Init();
+            });
+        });
+    }
+
+    Step9Distruct() {
+        $(".component__megamodal .q9").removeClass("active");
+        $(".component__megamodal .q9 .option").removeClass("active");
+        this.#Choose_the_budgeting_options = "";
+        $(".component__megamodal .q9 .theme-btn").attr("disabled", "disabled");
+        $(".component__megamodal .q9 .option").off();
+        $(".component__megamodal .q9 .theme-btn").off();
+    }
+
+    //step10 
+     Step10Init() {
+        this.DistructAllStep();
+        $(".component__megamodal .q10").addClass("active");
+        this.#Choose_the_budgeting_options = "";
+        let self = this;
+
+        $(".component__megamodal .q10 .option").on("click", function () {
+            $(".component__megamodal .q10 .option").removeClass("active");
+            self.#Choose_the_budgeting_options = $(this).attr("data-choose");
+            $(this).addClass("active");
+            $(".component__megamodal .q10 .theme-btn").removeAttr("disabled");
+            $(".component__megamodal .q10 .theme-btn").on("click", function () {
+                self.#map.set("Choose the budgeting options", self.#Choose_the_budgeting_options);
+                self.Step5Init();
+            });
+        });
+    }
+
+    Step10Distruct() {
+        $(".component__megamodal .q10").removeClass("active");
+        $(".component__megamodal .q10 .option").removeClass("active");
+        this.#Choose_the_budgeting_options = "";
+        $(".component__megamodal .q10 .theme-btn").attr("disabled", "disabled");
+        $(".component__megamodal .q10 .option").off();
+        $(".component__megamodal .q10 .theme-btn").off();
+    }
+
 
     DistructAllStep() {
         this.Step1Distruct();
@@ -314,6 +379,8 @@ class Megamodal {
         this.Step5Distruct();
         this.Step7Distruct();
         this.Step8Distruct();
+        this.Step9Distruct();
+        this.Step10Distruct();
     }
 
 
@@ -322,7 +389,7 @@ class Megamodal {
     Initialize() {
         $(".component__megamodal").addClass("active");
         this.#map = new Map(); // Используем this.#map для обращения к приватному полю
-        this.Step1Init();
+        this.Step7Init();
     }
 
     Distruct() {

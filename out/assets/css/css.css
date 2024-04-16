@@ -23631,6 +23631,27 @@ hero slider s2
   align-items: center;
 }
 
+a.blank {
+  /* animation-name: blank;
+
+  animation-duration: 0.3s;
+
+  animation-timing-function: linear;
+
+  animation-delay: 0.3s;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate;
+
+  animation-fill-mode: none; */
+  color: #079885 !important;
+}
+
+.wpo-site-footer .widget-title a {
+  color: #fff;
+}
+
 
 @media (max-width: 1700px) {
   .wpo-site-header {
@@ -24134,27 +24155,27 @@ hero slider s2
   justify-content: center;
   align-items: center;
 }
-.component__megamodal > .down > .button-area {
+.component__megamodal > .down .button-area {
   width: 100%;
   padding: 60px 0;
   justify-content: center;
   display: flex;
 }
-.component__megamodal > .down > .button-area .theme-btn {
+.component__megamodal > .down .button-area .theme-btn {
   padding-left: 40px;
   padding-right: 40px;
   font-size: 18px;
 }
-.component__megamodal > .down > .button-area .theme-btn:disabled {
+.component__megamodal > .down .button-area .theme-btn:disabled {
   background: #ccc !important;
 }
-.component__megamodal > .down > .button-area .theme-btn:disabled::after {
+.component__megamodal > .down .button-area .theme-btn:disabled::after {
   background: #ccc !important;
 }
-.component__megamodal > .down > .button-area .theme-btn:disabled:hover {
+.component__megamodal > .down .button-area .theme-btn:disabled:hover {
   background: #ccc !important;
 }
-.component__megamodal > .down > .button-area .theme-btn:disabled:hover::after {
+.component__megamodal > .down .button-area .theme-btn:disabled:hover::after {
   background: #ccc !important;
 }
 /*# sourceMappingURL=css.css.map */
