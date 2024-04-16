@@ -614,6 +614,36 @@
 
 
    
+   
 
 
 })(window.jQuery);
+
+ // Функция обратного вызова, которая будет вызываться при каждом пересечении целевого элемента с порогом видимости
+ function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+      // Проверяем, виден ли элемент и есть ли у него атрибут data-animation
+      if (entry.isIntersecting && entry.target.dataset.animation) {
+        // Получаем элемент
+        let target = entry.target;
+        // Копируем значение из data-animation в class
+        target.classList.add(target.dataset.animation);
+        // После добавления класса можно отключить наблюдение за элементом, если анимация должна проигрываться только один раз
+        observer.unobserve(target);
+      }
+    });
+  }
+  
+  // Создаем экземпляр наблюдателя с функцией обратного вызова и опциями
+  let options = {
+    root: null,  // используем вьюпорт как область видимости
+    rootMargin: '-200px',
+    threshold: 0  // элемент должен быть видим на 50% перед активацией
+  };
+  let observer = new IntersectionObserver(handleIntersection, options);
+  
+  // Находим все элементы, у которых есть атрибут data-animation, и начинаем за ними наблюдение
+  document.querySelectorAll('[data-animation]').forEach(element => {
+    observer.observe(element);
+  });
+
