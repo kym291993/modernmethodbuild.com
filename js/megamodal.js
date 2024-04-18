@@ -167,6 +167,7 @@ class Megamodal {
     #your_address
     #call_date
     Step5Init() {
+        this.DistructAllStep();
         $(".component__megamodal .q5").addClass("active");
         this.#your_name = "";
         this.#your_email = "";
