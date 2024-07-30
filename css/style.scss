@@ -6766,9 +6766,13 @@ a.blank
 }
 
 
-.animate__animated
-{
-  opacity: 0;
+
+
+@media (min-width: 768px) {
+  .animate__animated
+  {
+    opacity: 0;
+  }
 }
 
 
