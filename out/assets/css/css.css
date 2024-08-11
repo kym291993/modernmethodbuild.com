@@ -18650,11 +18650,12 @@ a:hover {
   }
 }
 .topbar ul li {
-  font-size: 16px;
+  font-size: 18px;
   float: left;
   padding: 15px 10px;
   color: #e5e3e3;
   line-height: 1em;
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {
@@ -18681,13 +18682,13 @@ a:hover {
 
 @media (max-width: 1200px) {
   .topbar ul li {
-    font-size: 12px;
+    font-size: 14px;
     padding: 15px 10px;
   }
 }
 @media (max-width: 991px) {
   .topbar ul li {
-    font-size: 13px;
+    font-size: 15px;
   }
   .topbar {
     padding: 10px 0;
@@ -18698,7 +18699,7 @@ a:hover {
     float: left;
     border: none;
     padding: 8px 6px;
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media (max-width: 590px) {
@@ -18729,7 +18730,7 @@ a:hover {
 
 .topbar ul .fi:before {
   font-size: 15px;
-  font-size: 1rem;
+  font-size: 1em;
   color: #fff;
 }
 
