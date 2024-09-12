@@ -309,6 +309,7 @@
 <!-- end of header -->
 
      
+
 <!-- start of breadcumb-section -->
         <div class="wpo-breadcumb-area">
             <div class="container">
@@ -327,13 +328,53 @@
         </div>
         <!-- end of wpo-breadcumb-section-->
 
+
+<style>
+.button-group 
+{
+width: 100%;
+display: flex;
+justify-content: center;
+gap:15px;
+padding: 30px 0;
+
+
+}
+
+.button-group>.button 
+{
+        background: none;
+    border-radius: 20px;
+    border: #3757f7 solid 1px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #4f555a;
+    line-height: 1.8em;
+}
+
+.button-group > .is-checked 
+{
+background: #3757f7 ;
+color:white;
+}
+
+
+
+
+</style>
         <!--Start wpo-project-section-->  
         <section class="wpo-gallery-section wpo-gallery-section-s2 section-padding">
+
+        <div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+  <button class="button" data-filter=".x">x</button>
+   <button class="button" data-filter=".y">y</button>
+
+</div>
             <div class="container">
                 <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="wpo-gallery-container">
-                            <div class="grid">
+                    <div class="col col-xs-12 ">
+                        <div class="wpo-gallery-container project-grid">
+                            <div class="grid project-item x">
                                 <div class="wpo-gallery-item">
                                     <a href="project-single.html">
                                         <img src="assets/images/gallery/img-6.jpg" alt class="img img-responsive">
@@ -344,7 +385,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="grid">
+                            <div class="grid project-item x">
                                 <div class="wpo-gallery-item">
                                     <a href="project-single.html">
                                         <img src="assets/images/gallery/img-7.jpg" alt class="img img-responsive">
@@ -355,8 +396,8 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="grid">
-                                <div class="wpo-gallery-item">
+                            <div class="grid project-item y">
+                                <div class="wpo-gallery-item ">
                                     <a href="project-single.html">
                                         <img src="assets/images/gallery/img-8.jpg" alt class="img img-responsive">
                                         <div class="wpo-gallery-text">
@@ -366,7 +407,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="grid">
+                            <div class="grid project-item y">
                                 <div class="wpo-gallery-item">
                                     <a href="project-single.html">
                                         <img src="assets/images/gallery/img-9.jpg" alt class="img img-responsive">
@@ -377,7 +418,7 @@
                                     </a>
                                 </div>                         
                             </div>
-                            <div class="grid">
+                            <div class="grid project-item x">
                                 <div class="wpo-gallery-item">
                                     <a href="project-single.html">
                                         <img src="assets/images/gallery/img-10.jpg" alt class="img img-responsive">
@@ -388,7 +429,7 @@
                                     </a>
                                 </div> 
                             </div>
-                            <div class="grid">
+                            <div class="grid project-item y">
                                 <div class="wpo-gallery-item">
                                     <a href="project-single.html">
                                         <img src="assets/images/gallery/img-11.jpg" alt class="img img-responsive">
@@ -405,6 +446,8 @@
             </div>
         </section>
         <!--End wpo-project-section-->
+
+         
          
 
           <section class="wpo-contact-pg-section section-padding">

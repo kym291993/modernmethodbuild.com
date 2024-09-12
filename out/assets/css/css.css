@@ -18699,7 +18699,8 @@ a:hover {
     float: left;
     border: none;
     padding: 8px 6px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 900;
   }
 }
 @media (max-width: 590px) {
@@ -20186,7 +20187,8 @@ hero slider s2
   position: relative;
   padding-left: 35px;
   color: #e5e3e3;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .wpo-site-footer .contact-ft ul li i {
@@ -23658,6 +23660,29 @@ a.blank {
     opacity: 0;
   }
 }
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 0;
+}
+
+.button-group > .button {
+  background: none;
+  border-radius: 20px;
+  border: #3757f7 solid 1px;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #4f555a;
+  line-height: 1.8em;
+}
+
+.button-group > .is-checked {
+  background: #3757f7;
+  color: white;
+}
+
 
 @media (max-width: 1700px) {
   .wpo-site-header {

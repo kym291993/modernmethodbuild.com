@@ -48,6 +48,7 @@ var concatjsdes = [
     "./js/modernizr.custom.js",
     "./js/jquery.dlmenu.js",
     "./js/jquery-plugin-collection.js",
+    "./js/isotope.pkgd.min.js",
     "./js/script.js",
     "./js/megamodal.js"
 ];
