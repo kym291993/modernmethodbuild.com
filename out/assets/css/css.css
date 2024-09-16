@@ -23613,12 +23613,12 @@ hero slider s2
     object-fit: contain;
   }
 }
-.wpo-project-single-content-des ul, .wpo-solutions-section ul {
+.wpo-project-single-content-des ul, .wpo-solutions-section ul, .wpo-project-single-content-des ol, .wpo-solutions-section ol {
   padding-left: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.wpo-project-single-content-des ul li, .wpo-solutions-section ul li {
+.wpo-project-single-content-des ul li, .wpo-solutions-section ul li, .wpo-project-single-content-des ol li, .wpo-solutions-section ol li {
   margin-bottom: 5px;
 }
 
