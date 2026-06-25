@@ -3,7 +3,7 @@
   "name": "asp.net",
   "private": true,
   "devDependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^3.0.4",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
